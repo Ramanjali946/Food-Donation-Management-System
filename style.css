@@ -1,0 +1,440 @@
+/* ===== Food Donation Management - Fresh Green & Saffron theme ===== */
+:root{--g:#16803c;--gd:#0f5c2b;--gl:#e8f6ee;--o:#f59e0b;--od:#d97706;--ink:#1f2937;--mut:#6b7280;--bg:#fbfaf6;--card:#fff;--line:#e5e7eb;--r:16px;--sh:0 10px 30px rgba(15,92,43,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-container{max-width:1200px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.logo{font-size:24px;font-weight:700;color:var(--gd)}.logo i{color:var(--o)}.logo span{color:var(--o)}
+.nav-links{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.nav-link{padding:8px 14px;border-radius:999px;font-weight:500;font-size:15px;color:var(--ink);transition:.2s}
+.nav-link:hover{background:var(--gl);color:var(--g)}
+.nav-user{padding:0 10px;font-size:14px;color:var(--mut)}
+.nav-login{padding:8px 18px;border:2px solid var(--g);color:var(--g);border-radius:999px;font-weight:600;font-size:15px}
+.nav-login:hover{background:var(--gl)}
+.nav-register,.nav-logout{padding:9px 20px;background:var(--g);color:#fff!important;border-radius:999px;font-weight:600;font-size:15px;transition:.2s}
+.nav-register:hover,.nav-logout:hover{background:var(--gd)}
+.nav-logout{background:#dc2626}.nav-logout:hover{background:#b91c1c}
+
+/* BUTTONS */
+.primary-button,.dashboard-button,.volunteer-button,.accept-button,.login-submit,.register-submit,.donate-submit,.profile-update{display:inline-block;background:var(--g);color:#fff;border:0;padding:12px 28px;border-radius:999px;font:600 15px 'Poppins',sans-serif;cursor:pointer;transition:.2s;box-shadow:0 6px 16px rgba(22,128,60,.25)}
+.primary-button:hover,.dashboard-button:hover,.volunteer-button:hover,.accept-button:hover,.login-submit:hover,.register-submit:hover,.donate-submit:hover,.profile-update:hover{background:var(--gd);transform:translateY(-2px)}
+.secondary-button,.secondary-dashboard-button,.register-reset{display:inline-block;background:#fff;color:var(--od);border:2px solid var(--o);padding:11px 26px;border-radius:999px;font:600 15px 'Poppins',sans-serif;cursor:pointer;transition:.2s}
+.secondary-button:hover,.secondary-dashboard-button:hover,.register-reset:hover{background:var(--o);color:#fff}
+.login-submit,.register-submit,.donate-submit,.profile-update{width:100%}
+.register-buttons,.profile-buttons,.hero-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.register-buttons .register-submit{width:auto;flex:1}
+
+/* HOME */
+:root {
+    --forest: #0f3d2e;
+    --leaf: #2f9e5b;
+    --mint: #e3f4ea;
+    --marigold: #f5a524;
+    --ink: #12261e;
+    --muted: #55675f;
+    --paper: #f7faf8;
+    --white: #ffffff;
+}
+
+.home-page {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+    .home-page * {
+        box-sizing: border-box;
+    }
+
+    .home-page h1, .home-page h2, .home-page h3, .home-page h4, .home-page p {
+        margin: 0;
+    }
+
+.home-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Buttons */
+.primary-button, .secondary-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.primary-button {
+    background: var(--marigold);
+    color: var(--forest);
+}
+
+    .primary-button:hover {
+        background: #ffb73d;
+        transform: translateY(-2px);
+        color: var(--forest);
+        text-decoration: none;
+    }
+
+.secondary-button {
+    border: 2px solid rgba(255,255,255,.7);
+    color: #fff;
+}
+
+    .secondary-button:hover {
+        background: #fff;
+        color: var(--forest);
+        text-decoration: none;
+    }
+
+    .primary-button:focus-visible, .secondary-button:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 3px;
+    }
+
+/* HERO */
+.home-hero {
+    background: radial-gradient(circle at 85% 20%, rgba(47,158,91,.55), transparent 45%), linear-gradient(135deg, #0b2f23 0%, var(--forest) 60%, #14573f 100%);
+    color: #fff;
+    padding: 90px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.home-hero h1 {
+    font-size: clamp(38px, 5.5vw, 64px);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.home-hero p {
+    margin: 22px 0 34px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cfe8da;
+    max-width: 480px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-image-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,.35));
+}
+
+/* STATS */
+.stats-strip {
+    margin-top: -56px;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #fff;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 18px 50px rgba(15,61,46,.15);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px 20px;
+}
+
+    .stat-item + .stat-item {
+        border-left: 1px solid #e4ece7;
+    }
+
+    .stat-item i {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: var(--mint);
+        color: var(--leaf);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-shrink: 0;
+    }
+
+    .stat-item h3 {
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--forest);
+        line-height: 1.1;
+    }
+
+    .stat-item p {
+        font-size: 14px;
+        color: var(--muted);
+        margin-top: 2px;
+    }
+
+/* ABOUT */
+.about-section {
+    padding: 100px 0 80px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.about-image-wrap {
+    background: var(--mint);
+    border-radius: 28px;
+    padding: 28px;
+}
+
+    .about-image-wrap svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.about-section h2, .section-title {
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -.8px;
+    color: var(--forest);
+}
+
+.about-section p {
+    margin: 18px 0 26px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--muted);
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+    .about-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .about-list i {
+        color: var(--leaf);
+        font-size: 22px;
+    }
+
+/* HOW IT WORKS */
+.how-section {
+    padding: 40px 0 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.how-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+}
+
+.how-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 24px;
+    border: 1px solid #e1eae5;
+    text-align: left;
+}
+
+    .how-card i {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--forest);
+        color: var(--marigold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .how-card h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--forest);
+    }
+
+    .how-card p {
+        font-size: 15px;
+        line-height: 1.65;
+        color: var(--muted);
+    }
+
+/* CTA */
+.cta-section {
+    padding: 0 0 90px;
+}
+
+.cta-box {
+    background: linear-gradient(120deg, var(--forest), #1a6b4a);
+    border-radius: 28px;
+    padding: 60px 40px;
+    text-align: center;
+    color: #fff;
+    max-width: 1092px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .cta-box::after {
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        right: -90px;
+        top: -120px;
+        background: rgba(245,165,36,.22);
+    }
+
+    .cta-box h2 {
+        font-size: clamp(26px, 3.6vw, 38px);
+        font-weight: 800;
+        line-height: 1.25;
+        max-width: 640px;
+        margin: 0 auto 28px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .cta-box .primary-button {
+        position: relative;
+        z-index: 1;
+    }
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+    .hero-grid, .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(3) {
+        border-left: none;
+    }
+
+    .how-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-hero {
+        padding: 64px 0 110px;
+    }
+}
+
+@media (max-width: 560px) {
+    .stats-grid, .how-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item + .stat-item {
+        border-left: none;
+        border-top: 1px solid #e4ece7;
+    }
+
+    .cta-box {
+        padding: 44px 22px;
+    }
+}
+/* FORMS (login / register / donate / profile) */
+.login-section,.register-section,.donate-section,.profile-section{min-height:80vh;padding:50px 20px;display:flex;justify-content:center;align-items:flex-start;background:linear-gradient(160deg,#e8f6ee,#fffaf0)}
+.login-container,.register-container,.donate-container,.profile-container{width:100%;max-width:520px;background:#fff;border-radius:24px;box-shadow:var(--sh);padding:36px;border-top:6px solid var(--o)}
+.register-container,.donate-container{max-width:760px}
+.login-header,.register-header,.donate-header,.profile-header{text-align:center;margin-bottom:26px}
+.login-header h1,.register-header h1,.donate-header h1,.profile-header h1{color:var(--gd);font-size:28px}
+.login-header p,.register-header p,.donate-header p{color:var(--mut)}
+.profile-icon{font-size:46px}
+.form-group,.profile-group{margin-bottom:18px;flex:1}
+.form-group label,.profile-group label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+.form-row{display:flex;gap:18px;flex-wrap:wrap}.form-row .form-group{min-width:220px}
+.form-control,.profile-control{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;font:15px 'Poppins',sans-serif;background:#fafafa;transition:.2s}
+.form-control:focus,.profile-control:focus{outline:0;border-color:var(--g);background:#fff;box-shadow:0 0 0 4px rgba(22,128,60,.12)}
+textarea.form-control{resize:vertical}
+.password-wrapper{position:relative}.password-toggle{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:0;cursor:pointer;font-size:18px}
+.register-link,.login-link{text-align:center;margin-top:18px;color:var(--mut);font-size:14px}
+.register-link a,.login-link a{color:var(--g);font-weight:600}
+
+/* DASHBOARDS */
+.dashboard-section,.available-section,.accepted-section,.my-donations-section,.status-section,.ngo-section,.volunteer-section,.about-container,.page-header{padding:50px 20px}
+.dashboard-container,.available-container,.accepted-container,.my-donations-container,.status-container,.ngo-container,.volunteer-container{max-width:1200px;margin:auto}
+.dashboard-header,.available-header,.accepted-header,.status-header,.ngo-header,.volunteer-header,.about-header{margin-bottom:30px}
+.dashboard-header h1,.available-header h1,.accepted-header h1,.status-header h1,.ngo-header h1,.volunteer-header h1,.about-header h1{color:var(--gd);font-size:32px}
+.dashboard-header p,.available-header p,.accepted-header p,.status-header p,.ngo-header p,.volunteer-header p,.about-header p{color:var(--mut)}
+.dashboard-cards,.dashboard-grid,.ngo-cards,.volunteer-steps,.about-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.dashboard-card,.ngo-card,.volunteer-card,.volunteer-step,.about-card{background:#fff;border-radius:var(--r);padding:28px;border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,0,0,.04);transition:.25s;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.dashboard-card:hover,.ngo-card:hover,.volunteer-card:hover,.about-card:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--g)}
+.dashboard-card h2,.ngo-card h3,.volunteer-card h3,.about-card h3{color:var(--gd);font-size:20px}
+.dashboard-card p,.ngo-card p,.volunteer-card p,.about-card p{color:var(--mut);font-size:14px;flex:1}
+.card-icon,.ngo-icon,.volunteer-icon{font-size:36px;width:64px;height:64px;display:grid;place-items:center;background:var(--gl);border-radius:18px}
+.ngo-location{color:var(--od);font-weight:600;font-size:14px}
+.how-volunteer-works,.volunteer-bottom,.about-bottom{margin-top:36px;text-align:center}
+
+/* TABLES (GridView) */
+.donations-table-wrapper{overflow-x:auto;background:#fff;border-radius:var(--r);box-shadow:var(--sh)}
+.donation-table,.donations-table,.status-table,.accepted-table,table[id*="gv"]{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);font-size:14px}
+table[id*="gv"] th,.donation-table th,.donations-table th,.status-table th,.accepted-table th{background:var(--g);color:#fff;padding:14px 12px;text-align:left;font-weight:600;white-space:nowrap}
+table[id*="gv"] td,.donation-table td,.donations-table td,.status-table td,.accepted-table td{padding:13px 12px;border-bottom:1px solid var(--line)}
+table[id*="gv"] tr:nth-child(even) td{background:#f8fbf9}
+table[id*="gv"] tr:hover td{background:var(--gl)}
+table[id*="gv"] input[type=submit]{background:var(--o);color:#fff;border:0;padding:7px 16px;border-radius:999px;cursor:pointer;font:600 13px 'Poppins',sans-serif}
+table[id*="gv"] input[type=submit]:hover{background:var(--od)}
+.donation-actions{display:flex;gap:8px}
+
+/* FOOTER */
+.footer{background:#0b3d1e;color:#d1fae5;text-align:center;padding:40px 20px;margin-top:40px}
+.footer h3{color:#fff;margin-bottom:8px}.footer p{font-size:14px;opacity:.85}
+
+@media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.stats-grid,.how-grid{grid-template-columns:repeat(2,1fr)}.hero-content h1{font-size:36px}}
+@media(max-width:520px){.stats-grid,.how-grid{grid-template-columns:1fr}.login-container,.register-container,.donate-container,.profile-container{padding:24px}}
